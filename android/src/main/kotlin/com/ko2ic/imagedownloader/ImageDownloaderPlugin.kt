@@ -346,6 +346,7 @@ class ImageDownloaderPlugin : FlutterPlugin, ActivityAware, MethodCallHandler {
                 } else {
                     File("${context.getExternalFilesDir(directory)}/$tempSubDirectory")
                 }
+                else -> {}
 
                 if (!file.exists()) {
                     result.error(
